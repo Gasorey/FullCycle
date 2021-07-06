@@ -18,7 +18,7 @@ type Transaction struct {
 
 type TransactionRepository interface {
 	SaveTransaction(transaction Transaction, creditCard CreditCard) (err error)
-	GetCreditCard(creditCard CreditCard) (CreditCard, err error)
+	GetCreditCard(creditCard CreditCard) (cc CreditCard, err error)
 	CreateCreditCard(creditCard CreditCard) (err error)
 }
 
